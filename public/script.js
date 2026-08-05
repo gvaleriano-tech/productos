@@ -3,7 +3,8 @@ async function guardar() {
     const nombre = document.getElementById("nombre").value;
     const precio = document.getElementById("precio").value;
 
-    const respuesta = await fetch("http://localhost:3000/productos", {
+    /*const respuesta = await fetch("http://localhost:3000/productos", {*/
+    const respuesta = await fetch("https://inventario-api.onrender.com/productos", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -23,7 +24,7 @@ async function guardar() {
 
 async function listar() {
 
-    const respuesta = await fetch("http://localhost:3000/productos");
+    const respuesta = await fetch("https://inventario-api.onrender.com/productos");
 
     const datos = await respuesta.json();
 
