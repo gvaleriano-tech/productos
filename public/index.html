@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Productos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <h2>Sistema de Inventario</h2>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="./index.html">Registrar</a></li>
+                <li><a href="#">Reportes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="contenedor">
+
+        <h1>Registro de Productos</h1>
+
+        <div class="formulario">
+
+            <input type="text" id="nombre" placeholder="Nombre del producto">
+
+            <input type="number" id="precio" placeholder="Precio">
+
+            <button onclick="guardar()">Guardar</button>
+
+            <button onclick="listar()">Mostrar Productos</button>
+
+        </div>
+
+        <hr>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+
+            <tbody id="datos">
+
+            </tbody>
+
+        </table>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-contenido">
+            <p><strong>Sistema de Inventario</strong></p>
+
+            <p>Desarrollado con HTML, CSS, JavaScript, Node.js y MySQL</p>
+
+            <p>© 2026 Todos los derechos reservados.</p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
